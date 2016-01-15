@@ -3,6 +3,10 @@ var latest = require('../controller/latest.js');
 
 module.exports = function(app) {
     
+    app.get('/', function(req, res) {
+        res.sendFile('../views/index.html');
+    });
+    
     app.get('/api/imagesearch/*', function(req, res) {
         api(req, res);
     });

@@ -1,9 +1,9 @@
 var googleImages = require('../lib/google-images/index.js');
-var models = require('../models/models.js');
+var models = require('../models/model.js');
 
 module.exports = function(req, res) {
     var param   = decodeURIComponent(req.params[0]);
-    var client  = googleImages('007681842535531188744:oice315q8ru', 'AIzaSyDlLhQ14DHhs3qdLg9TywTHgaYQM5ntPn4');
+    var client  = googleImages(process.env.CSE, process.env.KEY);
     
     if (req.query) {
         var options = {page:req.query.offset};
