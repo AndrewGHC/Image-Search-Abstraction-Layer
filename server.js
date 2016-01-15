@@ -5,8 +5,7 @@ var app = express();
 
 routes(app);
 
-//mongoose.connect(process.env.MONGODB);
-mongoose.connect('mongodb://andrewghc:password@ds035995.mongolab.com:35995/url-shortener');
+mongoose.connect(process.env.MONGODB);
 
 var db = mongoose.connection;
     db.on('error', console.error.bind(console, 'connection error:'));
