@@ -3,14 +3,12 @@ var models = require('../models/model.js');
 
 module.exports = function(req, res) {
     var param   = decodeURIComponent(req.params[0]);
-    var client  = googleImages(process.env.CSE, process.env.KEY);
-    
+    //var client  = googleImages(process.env.CSE, process.env.KEY);
+    var client  = googleImages('007681842535531188744:oice315q8ru', 'AIzaSyDlLhQ14DHhs3qdLg9TywTHgaYQM5ntPn4');
     if (req.query) {
         var options = {page:req.query.offset};
     }
-    console.log(options);
-    console.log(req.query);
-    // To solve this, set the snippet to the input text. Use the rest of the vars in a new obj. Return this.
+
     client.search(param, options)
         .then(function (images) {
             var sendImages = [];
