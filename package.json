@@ -1,13 +1,13 @@
 {
-  "name": "RequestHeaderMicroservice",
-  "version": "0.0.0",
+  "name": "ImageAbstractionLayer",
+  "version": "1.0.0",
   "description": "Basejump challenge from FCC",
   "main": "server.js",
   "repository": "",
-  "author": "Na",
+  "author": "AndrewGHC",
   "dependencies": {
-    "accepts": "^1.3.0",
     "express": "^4.13.3",
-    "useragent": "^2.1.8"
+    "google-images": "^1.0.0",
+    "mongoose": "^4.3.5"
   }
 }
