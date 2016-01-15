@@ -1,10 +1,11 @@
 var api = require('../controller/api.js');
 var latest = require('../controller/latest.js');
+var path = process.cwd();
 
 module.exports = function(app) {
     
     app.get('/', function(req, res) {
-        res.sendFile('../views/index.html');
+        res.sendFile(path + '/app/views/index.html');
     });
     
     app.get('/api/imagesearch/*', function(req, res) {
