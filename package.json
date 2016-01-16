@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "Basejump challenge from FCC",
   "main": "server.js",
-  "repository": "",
+  "repository": "https://github.com/AndrewGHC/Image-Search-Abstraction-Layer",
   "author": "AndrewGHC",
   "dependencies": {
     "express": "^4.13.3",
-    "google-images": "^1.0.0",
     "mongoose": "^4.3.5"
   }
 }

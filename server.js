@@ -3,9 +3,7 @@ var routes = require('./app/routes/routes.js');
 var mongoose = require("mongoose");
 var app = express();
 
-routes(app);
-
-mongoose.connect(process.env.MONGODB);
+routes(app, process.env);
 
 var db = mongoose.connection;
     db.on('error', console.error.bind(console, 'connection error:'));
