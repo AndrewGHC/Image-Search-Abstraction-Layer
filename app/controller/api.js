@@ -1,4 +1,4 @@
-var googleImages = require('../lib/google-images/index.js');
+var googleImages = require('../lib/google-images/google-images.js');
 var models = require('../models/model.js');
 
 module.exports = function(req, res, env) {
