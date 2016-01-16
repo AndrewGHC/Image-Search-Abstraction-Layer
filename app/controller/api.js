@@ -32,7 +32,7 @@ function sendToDb (query) {
     
     var saveModel = new models({
         term:query,
-        when:date.toDateString()
+        when:date.toString()
     });
     
     saveModel.save(function (err) {

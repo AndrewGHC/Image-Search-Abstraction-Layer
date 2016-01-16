@@ -1,5 +1,7 @@
 'use strict';
 
+// Modified from https://github.com/vdemedes/google-images
+
 /**
  * Dependencies
  */
