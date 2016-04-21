@@ -1,6 +1,7 @@
-https://image-abstraction-layer.herokuapp.com/
+Image Abstraction Layer
+=======================
 
-Image Abstraction Layer for the FCC challenge - http://www.freecodecamp.com/challenges/basejump-image-search-abstraction-layer
+https://image-abstraction-layer.herokuapp.com/
 
 Search for images using ~/api/latestImage/{search parameter}[optional query using ?offset=NUM to affect pagination]
 
